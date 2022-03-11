@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkerViewSuff.WorkerView"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/frame2"
+        >
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:id="@+id/bottom"
+            android:background="@color/white"
+            app:mbn_selectedIconColor="#31afb4"
+            app:mbn_backgroundBottomColor="#31afb4"
+            />
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

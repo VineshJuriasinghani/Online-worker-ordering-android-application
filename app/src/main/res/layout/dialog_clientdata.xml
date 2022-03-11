@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="200dp"
+    >
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/NameTag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:text="name :"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+        <TextView
+            android:id="@+id/cFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+
+        <TextView
+            android:id="@+id/cLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:text="phone no : "
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+
+        <TextView
+            android:id="@+id/cphno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <RatingBar
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:numStars="4"
+        android:layout_marginLeft="20dp"
+        android:isIndicator="true"
+        android:id="@+id/cshow_rating"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/select_address"
+        android:id="@+id/directions"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_width="121dp"
+            android:layout_height="55dp"
+            android:layout_margin="20dp"
+            android:text="Decline request" android:layout_marginBottom="3dp"
+            android:id="@+id/Decline_req"
+            android:layout_gravity="center"
+            android:backgroundTint="#FF0000"
+
+            />
+        <Button
+            android:layout_margin="20dp"
+            android:layout_width="121dp"
+            android:layout_height="55dp"
+            android:text="Start Working" android:layout_marginBottom="3dp"
+            android:id="@+id/start_working"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

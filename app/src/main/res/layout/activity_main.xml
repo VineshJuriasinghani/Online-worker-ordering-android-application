@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="375dp"
+            android:layout_height="286dp"
+            android:layout_gravity="center"
+            android:src="@drawable/main"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:hint="Phone No:" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:inputType="textPassword"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/password"
+            android:background="@color/white"
+            android:hint="Password"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+ <RadioGroup
+    android:id="@+id/category"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+     android:orientation="horizontal"
+     android:layout_marginLeft="15dp"
+android:layout_marginTop="15dp"
+     android:layout_centerInParent="true"
+     >
+            <RadioButton
+                android:id="@+id/worker"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="worker" />
+
+
+            <RadioButton
+                 android:id="@+id/client"
+                android:layout_width="105dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_centerInParent="true"
+                 android:text="client" />
+ </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="50dp"
+            android:background="#31afb4"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            android:id="@+id/signin"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click on "
+                android:textColor="#31afb4"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="signup"
+                android:textStyle="bold"
+                android:textColor="#31afb4"
+                android:id="@+id/signup"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" to create an account"
+                android:textColor="#31afb4"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
+
+
+
+
+
+
+

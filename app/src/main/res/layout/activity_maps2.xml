@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/address_pickup"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity2"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        android:id="@+id/search"
+        android:elevation="30dp"
+        android:imeOptions="actionSearch"
+        map:queryHint="Street,Apt,City,Province,PostalCode,Country/Region"
+        >
+
+    </androidx.appcompat.widget.SearchView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm address"
+        android:layout_marginTop="660dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="210dp"
+        android:id="@+id/confirm_add"
+        android:visibility="invisible"
+        >
+
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+    </fragment>
